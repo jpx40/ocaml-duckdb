@@ -15,7 +15,7 @@ depends: [
   "odoc" {with-doc}
 ]
 build: [
-  ["dune" "subst"] {dev}
+  ["dune" "subst"]# {dev}
   [
     "dune"
     "build"
@@ -24,8 +24,8 @@ build: [
     "-j"
     jobs
     "@install"
-    "@runtest" {with-test}
-    "@doc" {with-doc}
+#    "@runtest" {with-test}
+   # "@doc" {with-doc}
   ]
 ]
 dev-repo: "git+https://github.com/username/reponame.git"

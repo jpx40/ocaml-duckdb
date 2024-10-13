@@ -12,7 +12,7 @@ doc: "https://url/to/documentation"
 depends: [
   "ocaml"
   "dune" {>= "3.8"}
-  "odoc" {with-doc}
+#  "odoc" {with-doc}
 ]
 build: [
   ["dune" "subst"]# {dev}
